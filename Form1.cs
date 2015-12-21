@@ -1704,7 +1704,7 @@ public float Range(int n, float[] arrayData)
             for (int ix = 0; ix < Data.columnChoosen.Length; ix++)
                 if (Data.columnChoosen[ix] != -1)
                     columnChoosen.Add(Data.variableView[Data.columnChoosen[ix]].nama);
-            judul = "Median";
+            judul = "Modus";
             if (dr == DialogResult.OK)
             {
                 for (int index = 0; index < Data.columnChoosen.Length; index++)
