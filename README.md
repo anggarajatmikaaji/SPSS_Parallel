@@ -17,7 +17,7 @@ System Requirement untuk membuat aplikasi ini antara lain :
 1. Software
    - Windows 10 x64 bit
    - Visual Studio 2013
-   - CUDA Toolkit v7.5
+   - [CUDA Toolkit v7.5](https://developer.nvidia.com/cuda-downloads)
 2. Hardware
    - Nvidia Graphic Card
 3. Package
@@ -30,9 +30,9 @@ Catatan :
 1. Aplikasi dibangun menggunakan bahasa pemrograman c#
 2. Sebaiknya menggunakan Visual Studio 2013 atau dibawahnya karena untuk visual studio 2015 saat kami coba belum support dengan CUDA Toolkit.
 3. Package Reogrid dan Json.Net akan secara otomatis terinstall jika kita mem-build ulang Source Code di atas.
-4. Package CUDAfy.Net perlu mendapat perhatian khusus, karena versi CUDAfy.Net berpengaruh dengan versi CUDA Toolkit. Lihat link ini untuk melihat ketentuan : https://cudafy.codeplex.com/
+4. Package CUDAfy.Net perlu mendapat perhatian khusus, karena versi CUDAfy.Net berpengaruh dengan versi CUDA Toolkit. Lihat link [Codeplex ini](https://cudafy.codeplex.com/) untuk melihat ketentuan. 
 5. Jika terdapat pesan error saat mem-build, biasanya CUDAfy.Net perlu di update atau install ulang dengan cara:
-   - Download di link ini : https://cudafy.codeplex.com/. Diekstrak kemudian buka visual studio, pada jendela Solution Explorer Klik kanan References -> Add Reference -> Browse -> pindah ke folder Cudafy.Net diekstrak -> OK.
+   - Download di link [ini](https://cudafy.codeplex.com/). Diekstrak kemudian buka visual studio, pada jendela Solution Explorer Klik kanan References -> Add Reference -> Browse -> pindah ke folder Cudafy.Net diekstrak -> OK.
    - Pada jendela Solution Explorer Klik kanan References -> Manage NuGet Packages -> Uninstall Cudafy.Net kemudian install kembali.
 6. Kemudian jika sudah berhasil dibuild dan menghitung variansi, tapi pada saat keluar jendela ResultForm hasil perhitungannya tidak muncul, kemungkinan source code tidak terkompilasi, cara menanganinya dengan cara menambahkan PATH VC pada folder Visual Studio ke Environment Variables. Contoh Path-nya : "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64"
 
