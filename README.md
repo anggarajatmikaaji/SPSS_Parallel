@@ -1,6 +1,7 @@
 # SPSS_Parallel
 
 SPSS Paralel merupakan aplikasi desktop yang berfungsi untuk menghitung fungsi - fungsi statistik sederhana, antara lain :
+
 1. Modus
 2. Median
 3. Mean
@@ -12,6 +13,7 @@ SPSS Paralel merupakan aplikasi desktop yang berfungsi untuk menghitung fungsi -
 Bedanya aplikasi yang kami buat dengan aplikasi SPSS yang sudah ada yaitu kami menggunakan parallel computing untuk untuk menghitung fungsi - fungsi statistik yang ada. Untuk saat ini, fungsi variansi dan linier Regresi sederhana yang menggunakan parallel computing. Kedua fungsi tersebut cara memparalelkannya terletak pada SUM(jumlahan) dan perkalian. Kami menggunakan konsep SIMD(Single Instruction Multiple Data) untuk melakukan operasi jumlahan dan perkalian tersebut. Operasi komputasi dilakukan oleh GPU Nvidia, dimana kita menggunakan thread sebanyak setengah data yang dimasukkan dan setiap thread akan dimasukkan instruksi yang sama namun datanya berbeda-beda untuk tiap threadnya.
 
 System Requirement untuk membuat aplikasi ini antara lain :
+
 1. Software
    - Windows 10 x64 bit
    - Visual Studio 2013
@@ -24,6 +26,7 @@ System Requirement untuk membuat aplikasi ini antara lain :
    - CUDAfy.Net v1.29
 
 Catatan :
+
 1. Aplikasi dibangun menggunakan bahasa pemrograman c#
 2. Sebaiknya menggunakan Visual Studio 2013 atau dibawahnya karena untuk visual studio 2015 saat kami coba belum support dengan CUDA Toolkit.
 3. Package Reogrid dan Json.Net akan secara otomatis terinstall jika kita mem-build ulang Source Code di atas.
